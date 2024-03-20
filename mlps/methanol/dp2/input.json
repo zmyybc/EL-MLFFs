@@ -1,0 +1,73 @@
+{
+    "model": {
+        "type_map": [
+            "Cu",
+            "C",
+            "O",
+            "H"
+        ],
+        "descriptor": {
+            "type": "se_e2_r",
+            "sel": [
+                16,
+                16,
+                16,
+                16
+            ],
+            "rcut_smth": 0.5,
+            "rcut": 5.0,
+            "neuron": [
+                120,
+                120,
+                120
+            ],
+            "resnet_dt": true,
+            
+            "seed": 1043665192
+        },
+        "fitting_net": {
+            "neuron": [
+                120,
+                120,
+                120
+            ],
+            "resnet_dt": false,
+            "seed": 2031403296
+        }
+    },
+    "loss": {
+        "start_pref_e": 0.02,
+        "limit_pref_e": 1,
+        "start_pref_f": 1000,
+        "limit_pref_f": 1,
+        "start_pref_v": 0,
+        "limit_pref_v": 0
+    },
+    "learning_rate": {
+        "type": "exp",
+        "start_lr": 0.001,
+        "decay_steps": 500
+    },
+    "training": {
+        "stop_batch": 70000,
+        "disp_file": "lcurve.out",
+        "disp_freq": 100,
+        "numb_test": 4,
+        "save_freq": 1000,
+        "save_ckpt": "model.ckpt",
+        "disp_training": true,
+        "time_training": true,
+        "profiling": false,
+        "profiling_file": "timeline.json",
+        "_comment": "that's all",
+        "training_data": {
+            "systems": [
+                "../000/train"         ],
+            "batch_size": [
+                1
+            ]
+        },
+        "seed": 1748309234
+    }
+}
+

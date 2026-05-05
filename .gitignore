@@ -1,1 +1,32 @@
-el-mlffs/raw/
+# Data & checkpoints
+*.pth
+*.pt
+*.pkl
+*.lmdb
+*.extxyz
+*.traj
+data/
+checkpoints/
+raw/
+processed/
+tmp/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+.venv/
+
+# Lock files
+.horm_env_setup.lock

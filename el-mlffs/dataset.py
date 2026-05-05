@@ -3,7 +3,7 @@ import torch
 import pickle
 from torch_geometric.data import Data
 from torch_geometric.data import Dataset
-
+import os # 引入 os 库
 
 def atom_types_to_features(atom_types):
     unique_types = sorted(set(atom_types))  
@@ -44,6 +44,7 @@ class Ensemble_Dataset(Dataset):
         self.suffix = "".join([str(model_list.index(x)) for x in picked_models])
         self.raw_file_name = raw_file_name
         super(Ensemble_Dataset, self).__init__(root, transform, pre_transform)
+        # 加载处理好的数据
         self.data = torch.load(self.processed_paths[0])
 
     @property
@@ -58,6 +59,7 @@ class Ensemble_Dataset(Dataset):
         pass
 
     def process(self):
+        print("Processing raw data and generating new .pt file with atomic positions...")
         with open(self.raw_paths[0], 'rb') as f:
             raw_data_list = pickle.load(f)
 
@@ -74,6 +76,7 @@ class Ensemble_Dataset(Dataset):
 
             atom_features = atom_types_to_features(atom_types.flatten())
             
+            # 这里你已经提取了 positions 并转为 tensor
             positions_tensor = torch.tensor(positions, dtype=torch.float)
             forces_pred_tensor = torch.tensor(forces_pred, dtype=torch.float)
             x = torch.cat([atom_features, forces_pred_tensor], dim=1)
@@ -82,11 +85,15 @@ class Ensemble_Dataset(Dataset):
             
             y = torch.tensor(true_forces, dtype=torch.float)
 
-            data_ = Data(x=x, edge_index=edge_index, edge_attr=edge_attr, y=y)
+            # [关键修改]：将 pos=positions_tensor 显式地传入 Data 对象中！
+            data_ = Data(x=x, edge_index=edge_index, edge_attr=edge_attr, y=y, pos=positions_tensor)
 
             Data_list.append(data_)  
         
+        # 确保保存目录存在
+        os.makedirs(self.processed_dir, exist_ok=True)
         torch.save(Data_list, self.processed_paths[0])
+        print(f"Data successfully processed and saved to {self.processed_paths[0]}")
  
     def len(self):
         return len(self.data)

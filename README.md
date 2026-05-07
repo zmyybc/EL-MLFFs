@@ -95,37 +95,20 @@ EL-MLFFs/
 └── README.md                       # This file
 ```
 
-## Key Results
-
-| Method | Val Force MAE |
-|--------|--------------|
-| AVG | 0.0362 |
-| LWA | 0.0140 |
-| LNC | 0.0130 |
-| LSM-Direct | 0.0460 |
-| **Ensemble-Direct (Ours)** | **0.0082** |
-| **Ensemble-Conserv (Ours)** | **0.0073** |
-
-See `reports/paper_deliverables/` for full paper figures, ablation studies, and speed benchmarks.
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@article{elmlffs2024,
-  title={Ensemble Learning for Machine Learning Force Fields},
-  author={...},
-  journal={...},
-  year={2024}
-}
-```
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Base model implementations build upon [DeepMD-kit](https://github.com/deepmodeling/deepmd-kit), [MACE](https://github.com/ACEsuit/mace), [SchNetPack](https://github.com/atomistic-machine-learning/schnetpack), and [PaiNN](https://github.com/atomistic-machine-learning/painn)
-- Datasets: OC20 S2EF 2M, self-computed peptide (Psi4 ωB97X/6-31G(d)), methanol
+This work builds upon the following atomic simulation packages and machine learning force field frameworks:
+
+- **Deep Potential (DP)** — [DeepMD-kit](https://github.com/deepmodeling/deepmd-kit)
+- **Neuroevolution Potential (NEP)** — [GPUMD](https://github.com/brucefan1983/GPUMD)
+- **Moment Tensor Potential (MTP)** — [mlip](https://gitlab.com/ashapeev/mlip-3)
+- **Smooth Overlap of Atomic Positions (SOAP)** — [QUIP/GAP](https://github.com/libAtoms/QUIP) and [dscribe](https://github.com/SINGROUP/dscribe)
+- **SchNet** — [SchNetPack](https://github.com/atomistic-machine-learning/schnetpack)
+- **Polarizable Atom Interaction Neural Network (PaiNN)** — [PaiNN](https://github.com/atomistic-machine-learning/painn)
+- **MACE** — [MACE](https://github.com/ACEsuit/mace)
+
+Datasets used in this work include OC20 S2EF 2M, self-computed peptide structures (Psi4 ωB97X/6-31G(d)), and methanol configurations.

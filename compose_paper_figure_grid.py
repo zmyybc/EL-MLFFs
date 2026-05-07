@@ -9,15 +9,15 @@ from PIL import Image
 
 
 PANELS = [
-    ("(a)", Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics/panel_methanol_mae.png")),
-    ("(b)", Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics/panel_peptide_mae.png")),
-    ("(c)", Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics/ensemble_size_vs_force_mae.png")),
-    ("(d)", Path("/mnt/bn/bangchen/EL-MLFFs/base_variant_correlation_21_outputs/base_variant_force_error_pearson_matrix_group_bracketed.png")),
-    ("(e)", Path("/mnt/bn/bangchen/EL-MLFFs/reports/force_error_distribution_current_7model_paper/current_7model_paper_force_parity.png")),
-    ("(f)", Path("/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/oc20_ood_eval_runs/uncertainty_vs_conserv_error/paper_uncertainty_id_ood_single_panel_refined.png")),
+    ("(a)", Path("reports/conservative_combo_metrics/panel_methanol_mae.png")),
+    ("(b)", Path("reports/conservative_combo_metrics/panel_peptide_mae.png")),
+    ("(c)", Path("reports/conservative_combo_metrics/ensemble_size_vs_force_mae.png")),
+    ("(d)", Path("base_variant_correlation_21_outputs/base_variant_force_error_pearson_matrix_group_bracketed.png")),
+    ("(e)", Path("reports/force_error_distribution_current_7model_paper/current_7model_paper_force_parity.png")),
+    ("(f)", Path("reports/oc20_ood_eval_runs/uncertainty_vs_conserv_error/paper_uncertainty_id_ood_single_panel_refined.png")),
 ]
 
-OUTPUT_DIR = Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics")
+OUTPUT_DIR = Path("reports/conservative_combo_metrics")
 OUTPUT_PNG = OUTPUT_DIR / "paper_six_panel_summary.png"
 OUTPUT_PDF = OUTPUT_DIR / "paper_six_panel_summary.pdf"
 PANEL_SIZE = (2400, 1900)

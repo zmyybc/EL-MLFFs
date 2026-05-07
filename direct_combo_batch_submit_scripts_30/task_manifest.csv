@@ -1,0 +1,128 @@
+task_index,num_models,base_models,combo_tag,default_save_path
+1,1,dp,dp,el-mlffs/checkpoints/meta_models/direct_combo/1_dp.pth
+2,1,nep,nep,el-mlffs/checkpoints/meta_models/direct_combo/2_nep.pth
+3,1,mtp,mtp,el-mlffs/checkpoints/meta_models/direct_combo/3_mtp.pth
+4,1,soap,soap,el-mlffs/checkpoints/meta_models/direct_combo/4_soap.pth
+5,1,painn,painn,el-mlffs/checkpoints/meta_models/direct_combo/5_painn.pth
+6,1,schnet,schnet,el-mlffs/checkpoints/meta_models/direct_combo/6_schnet.pth
+7,1,mace,mace,el-mlffs/checkpoints/meta_models/direct_combo/7_mace.pth
+8,2,dp nep,dp_nep,el-mlffs/checkpoints/meta_models/direct_combo/8_dp_nep.pth
+9,2,dp mtp,dp_mtp,el-mlffs/checkpoints/meta_models/direct_combo/9_dp_mtp.pth
+10,2,dp soap,dp_soap,el-mlffs/checkpoints/meta_models/direct_combo/10_dp_soap.pth
+11,2,dp painn,dp_painn,el-mlffs/checkpoints/meta_models/direct_combo/11_dp_painn.pth
+12,2,dp schnet,dp_schnet,el-mlffs/checkpoints/meta_models/direct_combo/12_dp_schnet.pth
+13,2,dp mace,dp_mace,el-mlffs/checkpoints/meta_models/direct_combo/13_dp_mace.pth
+14,2,nep mtp,nep_mtp,el-mlffs/checkpoints/meta_models/direct_combo/14_nep_mtp.pth
+15,2,nep soap,nep_soap,el-mlffs/checkpoints/meta_models/direct_combo/15_nep_soap.pth
+16,2,nep painn,nep_painn,el-mlffs/checkpoints/meta_models/direct_combo/16_nep_painn.pth
+17,2,nep schnet,nep_schnet,el-mlffs/checkpoints/meta_models/direct_combo/17_nep_schnet.pth
+18,2,nep mace,nep_mace,el-mlffs/checkpoints/meta_models/direct_combo/18_nep_mace.pth
+19,2,mtp soap,mtp_soap,el-mlffs/checkpoints/meta_models/direct_combo/19_mtp_soap.pth
+20,2,mtp painn,mtp_painn,el-mlffs/checkpoints/meta_models/direct_combo/20_mtp_painn.pth
+21,2,mtp schnet,mtp_schnet,el-mlffs/checkpoints/meta_models/direct_combo/21_mtp_schnet.pth
+22,2,mtp mace,mtp_mace,el-mlffs/checkpoints/meta_models/direct_combo/22_mtp_mace.pth
+23,2,soap painn,soap_painn,el-mlffs/checkpoints/meta_models/direct_combo/23_soap_painn.pth
+24,2,soap schnet,soap_schnet,el-mlffs/checkpoints/meta_models/direct_combo/24_soap_schnet.pth
+25,2,soap mace,soap_mace,el-mlffs/checkpoints/meta_models/direct_combo/25_soap_mace.pth
+26,2,painn schnet,painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/26_painn_schnet.pth
+27,2,painn mace,painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/27_painn_mace.pth
+28,2,schnet mace,schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/28_schnet_mace.pth
+29,3,dp nep mtp,dp_nep_mtp,el-mlffs/checkpoints/meta_models/direct_combo/29_dp_nep_mtp.pth
+30,3,dp nep soap,dp_nep_soap,el-mlffs/checkpoints/meta_models/direct_combo/30_dp_nep_soap.pth
+31,3,dp nep painn,dp_nep_painn,el-mlffs/checkpoints/meta_models/direct_combo/31_dp_nep_painn.pth
+32,3,dp nep schnet,dp_nep_schnet,el-mlffs/checkpoints/meta_models/direct_combo/32_dp_nep_schnet.pth
+33,3,dp nep mace,dp_nep_mace,el-mlffs/checkpoints/meta_models/direct_combo/33_dp_nep_mace.pth
+34,3,dp mtp soap,dp_mtp_soap,el-mlffs/checkpoints/meta_models/direct_combo/34_dp_mtp_soap.pth
+35,3,dp mtp painn,dp_mtp_painn,el-mlffs/checkpoints/meta_models/direct_combo/35_dp_mtp_painn.pth
+36,3,dp mtp schnet,dp_mtp_schnet,el-mlffs/checkpoints/meta_models/direct_combo/36_dp_mtp_schnet.pth
+37,3,dp mtp mace,dp_mtp_mace,el-mlffs/checkpoints/meta_models/direct_combo/37_dp_mtp_mace.pth
+38,3,dp soap painn,dp_soap_painn,el-mlffs/checkpoints/meta_models/direct_combo/38_dp_soap_painn.pth
+39,3,dp soap schnet,dp_soap_schnet,el-mlffs/checkpoints/meta_models/direct_combo/39_dp_soap_schnet.pth
+40,3,dp soap mace,dp_soap_mace,el-mlffs/checkpoints/meta_models/direct_combo/40_dp_soap_mace.pth
+41,3,dp painn schnet,dp_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/41_dp_painn_schnet.pth
+42,3,dp painn mace,dp_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/42_dp_painn_mace.pth
+43,3,dp schnet mace,dp_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/43_dp_schnet_mace.pth
+44,3,nep mtp soap,nep_mtp_soap,el-mlffs/checkpoints/meta_models/direct_combo/44_nep_mtp_soap.pth
+45,3,nep mtp painn,nep_mtp_painn,el-mlffs/checkpoints/meta_models/direct_combo/45_nep_mtp_painn.pth
+46,3,nep mtp schnet,nep_mtp_schnet,el-mlffs/checkpoints/meta_models/direct_combo/46_nep_mtp_schnet.pth
+47,3,nep mtp mace,nep_mtp_mace,el-mlffs/checkpoints/meta_models/direct_combo/47_nep_mtp_mace.pth
+48,3,nep soap painn,nep_soap_painn,el-mlffs/checkpoints/meta_models/direct_combo/48_nep_soap_painn.pth
+49,3,nep soap schnet,nep_soap_schnet,el-mlffs/checkpoints/meta_models/direct_combo/49_nep_soap_schnet.pth
+50,3,nep soap mace,nep_soap_mace,el-mlffs/checkpoints/meta_models/direct_combo/50_nep_soap_mace.pth
+51,3,nep painn schnet,nep_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/51_nep_painn_schnet.pth
+52,3,nep painn mace,nep_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/52_nep_painn_mace.pth
+53,3,nep schnet mace,nep_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/53_nep_schnet_mace.pth
+54,3,mtp soap painn,mtp_soap_painn,el-mlffs/checkpoints/meta_models/direct_combo/54_mtp_soap_painn.pth
+55,3,mtp soap schnet,mtp_soap_schnet,el-mlffs/checkpoints/meta_models/direct_combo/55_mtp_soap_schnet.pth
+56,3,mtp soap mace,mtp_soap_mace,el-mlffs/checkpoints/meta_models/direct_combo/56_mtp_soap_mace.pth
+57,3,mtp painn schnet,mtp_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/57_mtp_painn_schnet.pth
+58,3,mtp painn mace,mtp_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/58_mtp_painn_mace.pth
+59,3,mtp schnet mace,mtp_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/59_mtp_schnet_mace.pth
+60,3,soap painn schnet,soap_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/60_soap_painn_schnet.pth
+61,3,soap painn mace,soap_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/61_soap_painn_mace.pth
+62,3,soap schnet mace,soap_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/62_soap_schnet_mace.pth
+63,3,painn schnet mace,painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/63_painn_schnet_mace.pth
+64,4,dp nep mtp soap,dp_nep_mtp_soap,el-mlffs/checkpoints/meta_models/direct_combo/64_dp_nep_mtp_soap.pth
+65,4,dp nep mtp painn,dp_nep_mtp_painn,el-mlffs/checkpoints/meta_models/direct_combo/65_dp_nep_mtp_painn.pth
+66,4,dp nep mtp schnet,dp_nep_mtp_schnet,el-mlffs/checkpoints/meta_models/direct_combo/66_dp_nep_mtp_schnet.pth
+67,4,dp nep mtp mace,dp_nep_mtp_mace,el-mlffs/checkpoints/meta_models/direct_combo/67_dp_nep_mtp_mace.pth
+68,4,dp nep soap painn,dp_nep_soap_painn,el-mlffs/checkpoints/meta_models/direct_combo/68_dp_nep_soap_painn.pth
+69,4,dp nep soap schnet,dp_nep_soap_schnet,el-mlffs/checkpoints/meta_models/direct_combo/69_dp_nep_soap_schnet.pth
+70,4,dp nep soap mace,dp_nep_soap_mace,el-mlffs/checkpoints/meta_models/direct_combo/70_dp_nep_soap_mace.pth
+71,4,dp nep painn schnet,dp_nep_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/71_dp_nep_painn_schnet.pth
+72,4,dp nep painn mace,dp_nep_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/72_dp_nep_painn_mace.pth
+73,4,dp nep schnet mace,dp_nep_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/73_dp_nep_schnet_mace.pth
+74,4,dp mtp soap painn,dp_mtp_soap_painn,el-mlffs/checkpoints/meta_models/direct_combo/74_dp_mtp_soap_painn.pth
+75,4,dp mtp soap schnet,dp_mtp_soap_schnet,el-mlffs/checkpoints/meta_models/direct_combo/75_dp_mtp_soap_schnet.pth
+76,4,dp mtp soap mace,dp_mtp_soap_mace,el-mlffs/checkpoints/meta_models/direct_combo/76_dp_mtp_soap_mace.pth
+77,4,dp mtp painn schnet,dp_mtp_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/77_dp_mtp_painn_schnet.pth
+78,4,dp mtp painn mace,dp_mtp_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/78_dp_mtp_painn_mace.pth
+79,4,dp mtp schnet mace,dp_mtp_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/79_dp_mtp_schnet_mace.pth
+80,4,dp soap painn schnet,dp_soap_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/80_dp_soap_painn_schnet.pth
+81,4,dp soap painn mace,dp_soap_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/81_dp_soap_painn_mace.pth
+82,4,dp soap schnet mace,dp_soap_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/82_dp_soap_schnet_mace.pth
+83,4,dp painn schnet mace,dp_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/83_dp_painn_schnet_mace.pth
+84,4,nep mtp soap painn,nep_mtp_soap_painn,el-mlffs/checkpoints/meta_models/direct_combo/84_nep_mtp_soap_painn.pth
+85,4,nep mtp soap schnet,nep_mtp_soap_schnet,el-mlffs/checkpoints/meta_models/direct_combo/85_nep_mtp_soap_schnet.pth
+86,4,nep mtp soap mace,nep_mtp_soap_mace,el-mlffs/checkpoints/meta_models/direct_combo/86_nep_mtp_soap_mace.pth
+87,4,nep mtp painn schnet,nep_mtp_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/87_nep_mtp_painn_schnet.pth
+88,4,nep mtp painn mace,nep_mtp_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/88_nep_mtp_painn_mace.pth
+89,4,nep mtp schnet mace,nep_mtp_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/89_nep_mtp_schnet_mace.pth
+90,4,nep soap painn schnet,nep_soap_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/90_nep_soap_painn_schnet.pth
+91,4,nep soap painn mace,nep_soap_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/91_nep_soap_painn_mace.pth
+92,4,nep soap schnet mace,nep_soap_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/92_nep_soap_schnet_mace.pth
+93,4,nep painn schnet mace,nep_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/93_nep_painn_schnet_mace.pth
+94,4,mtp soap painn schnet,mtp_soap_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/94_mtp_soap_painn_schnet.pth
+95,4,mtp soap painn mace,mtp_soap_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/95_mtp_soap_painn_mace.pth
+96,4,mtp soap schnet mace,mtp_soap_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/96_mtp_soap_schnet_mace.pth
+97,4,mtp painn schnet mace,mtp_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/97_mtp_painn_schnet_mace.pth
+98,4,soap painn schnet mace,soap_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/98_soap_painn_schnet_mace.pth
+99,5,dp nep mtp soap painn,dp_nep_mtp_soap_painn,el-mlffs/checkpoints/meta_models/direct_combo/99_dp_nep_mtp_soap_painn.pth
+100,5,dp nep mtp soap schnet,dp_nep_mtp_soap_schnet,el-mlffs/checkpoints/meta_models/direct_combo/100_dp_nep_mtp_soap_schnet.pth
+101,5,dp nep mtp soap mace,dp_nep_mtp_soap_mace,el-mlffs/checkpoints/meta_models/direct_combo/101_dp_nep_mtp_soap_mace.pth
+102,5,dp nep mtp painn schnet,dp_nep_mtp_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/102_dp_nep_mtp_painn_schnet.pth
+103,5,dp nep mtp painn mace,dp_nep_mtp_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/103_dp_nep_mtp_painn_mace.pth
+104,5,dp nep mtp schnet mace,dp_nep_mtp_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/104_dp_nep_mtp_schnet_mace.pth
+105,5,dp nep soap painn schnet,dp_nep_soap_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/105_dp_nep_soap_painn_schnet.pth
+106,5,dp nep soap painn mace,dp_nep_soap_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/106_dp_nep_soap_painn_mace.pth
+107,5,dp nep soap schnet mace,dp_nep_soap_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/107_dp_nep_soap_schnet_mace.pth
+108,5,dp nep painn schnet mace,dp_nep_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/108_dp_nep_painn_schnet_mace.pth
+109,5,dp mtp soap painn schnet,dp_mtp_soap_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/109_dp_mtp_soap_painn_schnet.pth
+110,5,dp mtp soap painn mace,dp_mtp_soap_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/110_dp_mtp_soap_painn_mace.pth
+111,5,dp mtp soap schnet mace,dp_mtp_soap_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/111_dp_mtp_soap_schnet_mace.pth
+112,5,dp mtp painn schnet mace,dp_mtp_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/112_dp_mtp_painn_schnet_mace.pth
+113,5,dp soap painn schnet mace,dp_soap_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/113_dp_soap_painn_schnet_mace.pth
+114,5,nep mtp soap painn schnet,nep_mtp_soap_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/114_nep_mtp_soap_painn_schnet.pth
+115,5,nep mtp soap painn mace,nep_mtp_soap_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/115_nep_mtp_soap_painn_mace.pth
+116,5,nep mtp soap schnet mace,nep_mtp_soap_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/116_nep_mtp_soap_schnet_mace.pth
+117,5,nep mtp painn schnet mace,nep_mtp_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/117_nep_mtp_painn_schnet_mace.pth
+118,5,nep soap painn schnet mace,nep_soap_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/118_nep_soap_painn_schnet_mace.pth
+119,5,mtp soap painn schnet mace,mtp_soap_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/119_mtp_soap_painn_schnet_mace.pth
+120,6,dp nep mtp soap painn schnet,dp_nep_mtp_soap_painn_schnet,el-mlffs/checkpoints/meta_models/direct_combo/120_dp_nep_mtp_soap_painn_schnet.pth
+121,6,dp nep mtp soap painn mace,dp_nep_mtp_soap_painn_mace,el-mlffs/checkpoints/meta_models/direct_combo/121_dp_nep_mtp_soap_painn_mace.pth
+122,6,dp nep mtp soap schnet mace,dp_nep_mtp_soap_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/122_dp_nep_mtp_soap_schnet_mace.pth
+123,6,dp nep mtp painn schnet mace,dp_nep_mtp_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/123_dp_nep_mtp_painn_schnet_mace.pth
+124,6,dp nep soap painn schnet mace,dp_nep_soap_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/124_dp_nep_soap_painn_schnet_mace.pth
+125,6,dp mtp soap painn schnet mace,dp_mtp_soap_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/125_dp_mtp_soap_painn_schnet_mace.pth
+126,6,nep mtp soap painn schnet mace,nep_mtp_soap_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/126_nep_mtp_soap_painn_schnet_mace.pth
+127,7,dp nep mtp soap painn schnet mace,dp_nep_mtp_soap_painn_schnet_mace,el-mlffs/checkpoints/meta_models/direct_combo/127_dp_nep_mtp_soap_painn_schnet_mace.pth

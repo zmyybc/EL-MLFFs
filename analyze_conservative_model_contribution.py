@@ -16,13 +16,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--delivery-root",
         type=Path,
-        default=Path("/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle"),
+        default=Path("."),
     )
     parser.add_argument(
         "--checkpoint",
         type=Path,
         default=Path(
-            "/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/"
             "el-mlffs/checkpoints/meta_models/conservative_combo/"
             "127_dp_nep_mtp_soap_painn_schnet_mace.pth"
         ),
@@ -30,7 +29,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_model_contribution"),
+        default=Path("reports/conservative_model_contribution"),
     )
     parser.add_argument("--data-file", type=Path, default=None)
     parser.add_argument("--max-structures", type=int, default=512)
@@ -131,7 +130,7 @@ def build_loader(args: argparse.Namespace, config, device: torch.device):
     if dataset_backend == "peptide_dft_lmdb":
         import importlib.util
         import sys
-        main_repo_torch_data = Path("/mnt/bn/bangchen/EL-MLFFs/el-mlffs/torch_data.py")
+        main_repo_torch_data = Path("el-mlffs/torch_data.py")
         spec = importlib.util.spec_from_file_location("main_torch_data", str(main_repo_torch_data))
         torch_data_mod = importlib.util.module_from_spec(spec)
         sys.modules["main_torch_data"] = torch_data_mod

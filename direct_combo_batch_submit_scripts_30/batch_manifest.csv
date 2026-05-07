@@ -1,0 +1,31 @@
+batch_index,num_tasks,task_indices,base_model_groups,script_path
+1,5,1 2 3 4 5,dp ; nep ; mtp ; soap ; painn,direct_combo_batch_submit_scripts_30/1.sh
+2,5,6 7 8 9 10,schnet ; mace ; dp nep ; dp mtp ; dp soap,direct_combo_batch_submit_scripts_30/2.sh
+3,5,11 12 13 14 15,dp painn ; dp schnet ; dp mace ; nep mtp ; nep soap,direct_combo_batch_submit_scripts_30/3.sh
+4,5,16 17 18 19 20,nep painn ; nep schnet ; nep mace ; mtp soap ; mtp painn,direct_combo_batch_submit_scripts_30/4.sh
+5,5,21 22 23 24 25,mtp schnet ; mtp mace ; soap painn ; soap schnet ; soap mace,direct_combo_batch_submit_scripts_30/5.sh
+6,5,26 27 28 29 30,painn schnet ; painn mace ; schnet mace ; dp nep mtp ; dp nep soap,direct_combo_batch_submit_scripts_30/6.sh
+7,5,31 32 33 34 35,dp nep painn ; dp nep schnet ; dp nep mace ; dp mtp soap ; dp mtp painn,direct_combo_batch_submit_scripts_30/7.sh
+8,4,36 37 38 39,dp mtp schnet ; dp mtp mace ; dp soap painn ; dp soap schnet,direct_combo_batch_submit_scripts_30/8.sh
+9,4,40 41 42 43,dp soap mace ; dp painn schnet ; dp painn mace ; dp schnet mace,direct_combo_batch_submit_scripts_30/9.sh
+10,4,44 45 46 47,nep mtp soap ; nep mtp painn ; nep mtp schnet ; nep mtp mace,direct_combo_batch_submit_scripts_30/10.sh
+11,4,48 49 50 51,nep soap painn ; nep soap schnet ; nep soap mace ; nep painn schnet,direct_combo_batch_submit_scripts_30/11.sh
+12,4,52 53 54 55,nep painn mace ; nep schnet mace ; mtp soap painn ; mtp soap schnet,direct_combo_batch_submit_scripts_30/12.sh
+13,4,56 57 58 59,mtp soap mace ; mtp painn schnet ; mtp painn mace ; mtp schnet mace,direct_combo_batch_submit_scripts_30/13.sh
+14,4,60 61 62 63,soap painn schnet ; soap painn mace ; soap schnet mace ; painn schnet mace,direct_combo_batch_submit_scripts_30/14.sh
+15,4,64 65 66 67,dp nep mtp soap ; dp nep mtp painn ; dp nep mtp schnet ; dp nep mtp mace,direct_combo_batch_submit_scripts_30/15.sh
+16,4,68 69 70 71,dp nep soap painn ; dp nep soap schnet ; dp nep soap mace ; dp nep painn schnet,direct_combo_batch_submit_scripts_30/16.sh
+17,4,72 73 74 75,dp nep painn mace ; dp nep schnet mace ; dp mtp soap painn ; dp mtp soap schnet,direct_combo_batch_submit_scripts_30/17.sh
+18,4,76 77 78 79,dp mtp soap mace ; dp mtp painn schnet ; dp mtp painn mace ; dp mtp schnet mace,direct_combo_batch_submit_scripts_30/18.sh
+19,4,80 81 82 83,dp soap painn schnet ; dp soap painn mace ; dp soap schnet mace ; dp painn schnet mace,direct_combo_batch_submit_scripts_30/19.sh
+20,4,84 85 86 87,nep mtp soap painn ; nep mtp soap schnet ; nep mtp soap mace ; nep mtp painn schnet,direct_combo_batch_submit_scripts_30/20.sh
+21,4,88 89 90 91,nep mtp painn mace ; nep mtp schnet mace ; nep soap painn schnet ; nep soap painn mace,direct_combo_batch_submit_scripts_30/21.sh
+22,4,92 93 94 95,nep soap schnet mace ; nep painn schnet mace ; mtp soap painn schnet ; mtp soap painn mace,direct_combo_batch_submit_scripts_30/22.sh
+23,4,96 97 98 99,mtp soap schnet mace ; mtp painn schnet mace ; soap painn schnet mace ; dp nep mtp soap painn,direct_combo_batch_submit_scripts_30/23.sh
+24,4,100 101 102 103,dp nep mtp soap schnet ; dp nep mtp soap mace ; dp nep mtp painn schnet ; dp nep mtp painn mace,direct_combo_batch_submit_scripts_30/24.sh
+25,4,104 105 106 107,dp nep mtp schnet mace ; dp nep soap painn schnet ; dp nep soap painn mace ; dp nep soap schnet mace,direct_combo_batch_submit_scripts_30/25.sh
+26,4,108 109 110 111,dp nep painn schnet mace ; dp mtp soap painn schnet ; dp mtp soap painn mace ; dp mtp soap schnet mace,direct_combo_batch_submit_scripts_30/26.sh
+27,4,112 113 114 115,dp mtp painn schnet mace ; dp soap painn schnet mace ; nep mtp soap painn schnet ; nep mtp soap painn mace,direct_combo_batch_submit_scripts_30/27.sh
+28,4,116 117 118 119,nep mtp soap schnet mace ; nep mtp painn schnet mace ; nep soap painn schnet mace ; mtp soap painn schnet mace,direct_combo_batch_submit_scripts_30/28.sh
+29,4,120 121 122 123,dp nep mtp soap painn schnet ; dp nep mtp soap painn mace ; dp nep mtp soap schnet mace ; dp nep mtp painn schnet mace,direct_combo_batch_submit_scripts_30/29.sh
+30,4,124 125 126 127,dp nep soap painn schnet mace ; dp mtp soap painn schnet mace ; nep mtp soap painn schnet mace ; dp nep mtp soap painn schnet mace,direct_combo_batch_submit_scripts_30/30.sh

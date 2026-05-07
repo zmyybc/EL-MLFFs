@@ -38,9 +38,14 @@ python download_artifacts.py
 ```
 
 This downloads:
-- 7 pre-trained base model checkpoints (~43 MB)
-- 1 conservative meta-model checkpoint (~49 MB)
-- Training and test datasets (~63 MB)
+- **Standard version** (old dataset):
+  - 7 pre-trained base model checkpoints (`standard_base_models/`, ~43 MB)
+  - 1 conservative meta-model checkpoint (`standard_meta_models/conservative_meta_current_bases_8gpu.pth`, ~49 MB)
+  - 1 direct meta-model checkpoint (`standard_meta_models/direct_meta_depth3_h64_v32.pth`, ~49 MB)
+- **NVE cutoff-safe version**:
+  - 6 base model checkpoints (`nve_base_models/`, ~7.6 MB) — trained with smooth cutoff for energy-conserving MD
+  - 1 conservative meta-model checkpoint (`nve_meta_models/conservative_meta_6model_nve_cutoff_safe.pth`, ~14 MB)
+- **Dataset**: `train.extxyz` (~59 MB) + `test.extxyz` (~3.6 MB)
 
 After extraction, artifacts are placed under `el-mlffs/checkpoints/` and `el-mlffs/data/`.
 

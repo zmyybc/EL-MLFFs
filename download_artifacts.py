@@ -18,9 +18,9 @@ from urllib.request import urlretrieve
 
 # NOTE: Replace with the actual URL after uploading to a public storage
 # Examples: HuggingFace, Zenodo, Google Drive, or institutional file server
-DEFAULT_ARTIFACTS_URL = "https://litter.catbox.moe/q9pf0w.gz"
+DEFAULT_ARTIFACTS_URL = "https://litter.catbox.moe/2tjate.gz"
 
-EXPECTED_MD5 = "af1da75ed41cc487a0be87aed2141dee"  # elmlffs_artifacts.tar.gz
+EXPECTED_MD5 = "710f12731f4ae3e7f10c1d6c88ca2b72"  # elmlffs_release.tar.gz
 
 
 def download_file(url: str, dest: Path, chunk_size: int = 8192) -> None:

@@ -1,32 +1,89 @@
-# Data & checkpoints
-*.pth
-*.pt
-*.pkl
-*.lmdb
-*.extxyz
-*.traj
-data/
-checkpoints/
-raw/
-processed/
-tmp/
-
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
+*.egg
 
-# Logs
-logs/
+# Data caches & large files (datasets/checkpoints provided via download script)
+el-mlffs/data/*.pt
+el-mlffs/data/*.pckl
+el-mlffs/data/*.lmdb*
+el-mlffs/data/*.csv
+el-mlffs/data/*.pb
+el-mlffs/data/peptide_dft_cache/
+el-mlffs/data/train/
+el-mlffs/data/test/
+el-mlffs/checkpoints/
+el-mlffs/processed/
+el-mlffs/raw/
+el-mlffs/models/
+el-mlffs/tmp/
+mlps/
+ybc_delivery_bundle/
+
+# Reports (large outputs) — paper deliverables available separately
+reports/*/paper_*.png
+reports/*/paper_*.pdf
+reports/amino_acid_nve_*.csv
+reports/speed_benchmark_*.csv
+reports/speed_benchmark_*.log
+reports/*_nve_*/
+reports/force_error_distribution_*/
+reports/conservative_model_contribution/
+reports/conservative_model_contribution_connected/
+reports/conservative_model_contribution_smoke/
+reports/direct_model_contribution_7model/
+reports/direct_vs_conservative_contribution/
+reports/model_contribution_plotpy_style/
+reports/glycine_*/
+reports/peptide_*/
+reports/nve_conserv_*/
+reports/old_data_direct_conserv_ablation/
+reports/paper_deliverables.tar.gz
+
+# Temporary / generated
+*.tmp
 *.log
+*.out
+paper_deliverables.tar.gz
+el-mlffs_artifacts.tar.gz
+el-mlffs_artifacts.zip
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
-# Environment
-.env
-.venv/
+# System
+.DS_Store
+Thumbs.db
 
-# Lock files
+# DeepMD installer binaries
+el-mlffs/deepmd-kit-*.sh*
+el-mlffs/install.sh
+el-mlffs/md_run.traj
+el-mlffs/mace_nve_simulation.traj
+el-mlffs/nve_simulation.traj
+
+# Misc
+.codex
+.claude/
 .horm_env_setup.lock

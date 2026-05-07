@@ -1,0 +1,6 @@
+ase
+e3nn
+matplotlib
+seaborn
+tqdm
+torch-geometric

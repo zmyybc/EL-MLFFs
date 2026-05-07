@@ -1,0 +1,8 @@
+index,model_name,tag,initial_batch_size,max_batch_size,model_kwargs
+1,dp,dp_compact,8,192,hidden_channels=96;descriptor_embed_dim=48;descriptor_axis_dim=12;descriptor_type_emb_dim=12
+2,nep,nep_compact,8,160,hidden_channels=96;n_max_radial=8;n_max_angular=4;basis_radial=8;basis_angular=6
+3,mtp,mtp_compact,8,192,hidden_channels=96;descriptor_num_basis=12;descriptor_type_emb_dim=8;descriptor_radial_hidden_dim=48
+4,soap,soap_compact,8,128,hidden_channels=96;num_radial=6
+5,painn,painn_compact,4,128,hidden_channels=96;num_layers=2;num_basis=24
+6,schnet,schnet_compact,4,128,hidden_channels=96;num_filters=96;num_interactions=3;num_gaussians=40
+7,mace,mace_compact,2,48,num_layers=2;num_basis=16;hidden_scalar_dim=64;hidden_vector_dim=32

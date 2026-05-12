@@ -158,7 +158,7 @@ def plot_single_panel(models: list[dict], output_path: Path):
 def main():
     data_by_ds = parse_data()
     
-    output_dir = Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics")
+    output_dir = Path("./reports/conservative_combo_metrics")
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # 生成两张独立图片

@@ -14,12 +14,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--metrics-csv",
         type=Path,
-        default=Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics/metrics.csv"),
+        default=Path("./reports/conservative_combo_metrics/metrics.csv"),
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics"),
+        default=Path("./reports/conservative_combo_metrics"),
     )
     parser.add_argument("--dpi", type=int, default=400)
     return parser.parse_args()

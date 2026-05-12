@@ -8,7 +8,7 @@ import matplotlib.patheffects as pe
 import numpy as np
 
 
-OUTPUT_DIR = Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics")
+OUTPUT_DIR = Path("./reports/conservative_combo_metrics")
 OUTPUT_PNG = OUTPUT_DIR / "paper_diversity_replacement_effect_scatter.png"
 OUTPUT_PDF = OUTPUT_DIR / "paper_diversity_replacement_effect_scatter.pdf"
 OUTPUT_CSV = OUTPUT_DIR / "paper_diversity_replacement_effect_scatter.csv"

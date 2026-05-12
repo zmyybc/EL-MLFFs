@@ -2,11 +2,8 @@
 # Shared environment setup for NVE cutoff-safe retraining scripts.
 set -euo pipefail
 
-export http_proxy="${http_proxy:-http://sys-proxy-rd-relay.byted.org:8118}"
-export https_proxy="${https_proxy:-http://sys-proxy-rd-relay.byted.org:8118}"
-export no_proxy="${no_proxy:-byted.org}"
 
-PROJECT_ROOT="${PROJECT_ROOT:-/mnt/bn/bangchen/EL-MLFFs}"
+PROJECT_ROOT="${PROJECT_ROOT:-$PWD}"
 WORK_DIR="${PROJECT_ROOT}/el-mlffs"
 ENV_NAME="${ENV_NAME:-horm}"
 PYTHON_VERSION="${PYTHON_VERSION:-3.11}"

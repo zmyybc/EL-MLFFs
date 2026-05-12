@@ -24,7 +24,7 @@
 
 数据读取和图构建在：
 
-- [torch_data.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/torch_data.py)
+- [torch_data.py](el-mlffs/torch_data.py)
 
 当前训练流程默认期望每个构型至少包含：
 
@@ -44,7 +44,7 @@
 
 单个 base model 的训练入口是：
 
-- [train_torch_base.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/train_torch_base.py)
+- [train_torch_base.py](el-mlffs/train_torch_base.py)
 
 支持的模型：
 
@@ -103,7 +103,7 @@ python train_torch_base.py \
 
 批量训练入口：
 
-- [train_all_torch_bases.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/train_all_torch_bases.py)
+- [train_all_torch_bases.py](el-mlffs/train_all_torch_bases.py)
 
 默认会顺序训练：
 
@@ -149,7 +149,7 @@ python train_all_torch_bases.py \
 
 主入口：
 
-- [train_torch_ensemble.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/train_torch_ensemble.py)
+- [train_torch_ensemble.py](el-mlffs/train_torch_ensemble.py)
 
 支持两种 meta 架构：
 
@@ -210,7 +210,7 @@ python train_torch_ensemble.py \
 
 分布式工具在：
 
-- [train_distributed.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/train_distributed.py)
+- [train_distributed.py](el-mlffs/train_distributed.py)
 
 训练脚本会自动检测以下环境变量：
 
@@ -260,9 +260,9 @@ torchrun --standalone --nproc_per_node=4 train_torch_ensemble.py \
 
 如果你还想保留旧命令名，可以使用这些包装脚本：
 
-- [main_stream.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/main_stream.py)
+- [main_stream.py](el-mlffs/main_stream.py)
   随机划分训练入口
-- [ood_train.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/ood_train.py)
+- [ood_train.py](el-mlffs/ood_train.py)
   OOD 划分训练入口
 
 示例：
@@ -310,7 +310,7 @@ torchrun --standalone --nproc_per_node=4 main_stream.py \
 
 单模型评测入口：
 
-- [eval_torch_ensemble.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/eval_torch_ensemble.py)
+- [eval_torch_ensemble.py](el-mlffs/eval_torch_ensemble.py)
 
 示例：
 
@@ -322,7 +322,7 @@ python eval_torch_ensemble.py \
 
 批量扫描目录：
 
-- [test_all.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/test_all.py)
+- [test_all.py](el-mlffs/test_all.py)
 
 ```bash
 cd el-mlffs

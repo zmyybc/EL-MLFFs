@@ -17,12 +17,12 @@ import pandas as pd
 def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--checkpoint", type=Path, default=Path(
-        "/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/"
+        "el-mlffs/checkpoints/"
         "el-mlffs/checkpoints/meta_models/conservative_combo/"
         "127_dp_nep_mtp_soap_painn_schnet_mace.pth"
     ))
     p.add_argument("--delivery-root", type=Path, default=Path(
-        "/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle"
+        "el-mlffs/checkpoints"
     ))
     p.add_argument("--data-file", type=Path, default=None)
     p.add_argument("--output-dir", type=Path, default=Path(

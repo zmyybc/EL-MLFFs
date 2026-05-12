@@ -10,8 +10,8 @@ BATCH_SCRIPT_OUTPUT_DIR = "conservative_combo_batch_submit_scripts_15"
 BATCH_MANIFEST_FILENAME = "batch_manifest.csv"
 TASK_MANIFEST_FILENAME = "task_manifest.csv"
 REQUIREMENTS_FILENAME = "requirements-conservative-meta.txt"
-HORM_SETUP_PATH = "/mnt/bn/bangchen/HORM/setup.sh"
-HORM_SETUP_DIR = "/mnt/bn/bangchen/HORM"
+HORM_SETUP_PATH = ""
+HORM_SETUP_DIR = ""
 HORM_ENV_NAME = "horm"
 NUM_BATCH_SCRIPTS = 15
 
@@ -100,18 +100,17 @@ MASTER_PORT_BASE="${{MASTER_PORT_BASE:-29500}}"
 PYG_WHEEL_URL="${{PYG_WHEEL_URL:-https://data.pyg.org/whl/torch-2.2.1+cu121.html}}"
 ENV_SETUP_LOCK="${{ENV_SETUP_LOCK:-${{PROJECT_ROOT}}/.horm_env_setup.lock}}"
 
-export http_proxy="${{http_proxy:-http://sys-proxy-rd-relay.byted.org:8118}}"
-export https_proxy="${{https_proxy:-http://sys-proxy-rd-relay.byted.org:8118}}"
-export no_proxy="${{no_proxy:-byted.org}}"
 
 if mamba env list | awk '{{print $1}}' | grep -qx "{HORM_ENV_NAME}"; then
   echo "Detected existing mamba env: {HORM_ENV_NAME}. Skip setup.sh."
 else
   echo "Mamba env {HORM_ENV_NAME} not found. Running setup.sh."
-  (
-    cd "{HORM_SETUP_DIR}"
-    bash "{HORM_SETUP_PATH}"
-  )
+  if [ -n "{HORM_SETUP_DIR}" ] && [ -n "{HORM_SETUP_PATH}" ]; then
+    (
+      cd "{HORM_SETUP_DIR}"
+      bash "{HORM_SETUP_PATH}"
+    )
+  fi
 fi
 
 export MAMBA_ROOT_PREFIX="${{MAMBA_ROOT_PREFIX:-$(dirname "$(dirname "$(command -v mamba)")")}}"

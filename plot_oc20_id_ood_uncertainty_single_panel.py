@@ -31,7 +31,7 @@ def parse_args() -> argparse.Namespace:
         "--input-dir",
         type=Path,
         default=Path(
-            "/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/"
+            "./"
             "oc20_ood_eval_runs/uncertainty_vs_conserv_error"
         ),
     )

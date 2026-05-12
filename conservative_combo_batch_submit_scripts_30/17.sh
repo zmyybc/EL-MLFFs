@@ -31,9 +31,6 @@ MASTER_PORT_BASE="${MASTER_PORT_BASE:-29500}"
 PYG_WHEEL_URL="${PYG_WHEEL_URL:-https://data.pyg.org/whl/torch-2.2.1+cu121.html}"
 ENV_SETUP_LOCK="${ENV_SETUP_LOCK:-${PROJECT_ROOT}/.horm_env_setup.lock}"
 
-export http_proxy="${http_proxy:-http://sys-proxy-rd-relay.byted.org:8118}"
-export https_proxy="${https_proxy:-http://sys-proxy-rd-relay.byted.org:8118}"
-export no_proxy="${no_proxy:-byted.org}"
 
 if mamba env list | awk '{print $1}' | grep -qx "horm"; then
   echo "Detected existing mamba env: horm. Skip setup.sh."

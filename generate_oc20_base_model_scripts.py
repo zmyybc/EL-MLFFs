@@ -5,7 +5,7 @@ import csv
 from pathlib import Path
 
 
-ROOT = Path("/mnt/bn/bangchen/EL-MLFFs")
+ROOT = Path(__file__).resolve().parent
 SCRIPT_DIR = ROOT / "oc20_base_model_scripts"
 
 MODEL_SPECS = [
@@ -104,9 +104,6 @@ MODEL_SPECS = [
 SCRIPT_TEMPLATE = """#!/usr/bin/env bash
 set -euo pipefail
 
-export http_proxy="${{http_proxy:-http://sys-proxy-rd-relay.byted.org:8118}}"
-export https_proxy="${{https_proxy:-http://sys-proxy-rd-relay.byted.org:8118}}"
-export no_proxy="${{no_proxy:-byted.org}}"
 export PYTORCH_CUDA_ALLOC_CONF="${{PYTORCH_CUDA_ALLOC_CONF:-expandable_segments:True}}"
 
 ENV_NAME="${{ENV_NAME:-horm}}"

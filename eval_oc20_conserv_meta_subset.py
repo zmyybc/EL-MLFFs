@@ -18,13 +18,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--delivery-root",
         type=Path,
-        default=Path("/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle"),
+        default=Path("./"),
     )
     parser.add_argument(
         "--checkpoint",
         type=Path,
         default=Path(
-            "/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/"
+            "./"
             "el-mlffs/checkpoints/oc20_meta_models/oc20_conserv_7model.pth"
         ),
     )
@@ -32,7 +32,7 @@ def parse_args() -> argparse.Namespace:
         "--sample-cache-dir",
         type=Path,
         default=Path(
-            "/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/oc20_ood_eval_runs"
+            "./oc20_ood_eval_runs"
         ),
         help="Directory containing base-model force cache files with sample_indices.",
     )
@@ -60,7 +60,7 @@ def parse_args() -> argparse.Namespace:
         "--output",
         type=Path,
         default=Path(
-            "/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/"
+            "./"
             "oc20_ood_eval_runs/oc20_conserv_meta_ood_metrics_100k.tsv"
         ),
     )
@@ -68,7 +68,7 @@ def parse_args() -> argparse.Namespace:
         "--save-force-dir",
         type=Path,
         default=Path(
-            "/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/"
+            "./"
             "oc20_ood_eval_runs/conserv_force_cache"
         ),
     )

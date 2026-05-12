@@ -32,7 +32,7 @@ Default schedule:
 Run examples:
 
 ```bash
-cd /mnt/bn/bangchen/EL-MLFFs
+cd $PWD
 bash nve_cutoff_safe_training_scripts/1_dp.sh
 bash nve_cutoff_safe_training_scripts/2_nep.sh
 bash nve_cutoff_safe_training_scripts/3_mtp.sh
@@ -46,7 +46,7 @@ bash nve_cutoff_safe_training_scripts/8_meta_conservative.sh
 Sequential all-in-one:
 
 ```bash
-cd /mnt/bn/bangchen/EL-MLFFs
+cd $PWD
 bash nve_cutoff_safe_training_scripts/run_all_sequential.sh
 ```
 
@@ -61,7 +61,7 @@ The scripts intentionally install only `requirements-conservative-meta.txt` and 
 Optional 7-GPU base-model parallel run:
 
 ```bash
-cd /mnt/bn/bangchen/EL-MLFFs
+cd $PWD
 bash nve_cutoff_safe_training_scripts/run_bases_parallel_7gpu.sh
 bash nve_cutoff_safe_training_scripts/8_meta_conservative.sh
 ```

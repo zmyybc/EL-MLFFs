@@ -13,11 +13,11 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Plot grouped 21x21 base-variant correlation heatmap.")
     parser.add_argument(
         "--csv-path",
-        default="/mnt/bn/bangchen/EL-MLFFs/base_variant_correlation_21_outputs/base_variant_force_error_pearson_matrix.csv",
+        default="./base_variant_correlation_21_outputs/base_variant_force_error_pearson_matrix.csv",
     )
     parser.add_argument(
         "--output-path",
-        default="/mnt/bn/bangchen/EL-MLFFs/base_variant_correlation_21_outputs/base_variant_force_error_pearson_matrix_group_bracketed.png",
+        default="./base_variant_correlation_21_outputs/base_variant_force_error_pearson_matrix_group_bracketed.png",
     )
     return parser.parse_args()
 

@@ -29,7 +29,7 @@
 
 实现位置：
 
-- [torch_base_models.py](/mnt/bn/bangchen/EL-MLFFs/el-mlffs/torch_base_models.py)
+- [torch_base_models.py](el-mlffs/torch_base_models.py)
 
 判断依据：
 

@@ -56,7 +56,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--root",
         type=Path,
-        default=Path("/mnt/bn/bangchen/EL-MLFFs/data/oc20"),
+        default=Path("data/oc20"),
         help="Output root containing raw/, extracted/, and metadata/ directories.",
     )
     parser.add_argument(

@@ -172,8 +172,8 @@ def write_rows(rows: list[dict], path: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", type=Path, required=True)
-    parser.add_argument("--lmdb-path", type=Path, default=Path("/mnt/bn/bangchen1/HORM3/data/peptide_dft_wb97x_5k.lmdb"))
-    parser.add_argument("--results-root", type=Path, default=Path("/mnt/bn/changsu-data3/ybc/gvgvpgvg_full_5000_ff_diverse_gpu4pyscf_qc/results_40"))
+    parser.add_argument("--lmdb-path", type=Path, default=ROOT / "el-mlffs/data/peptide/peptide_dft_wb97x_5k.lmdb")
+    parser.add_argument("--results-root", type=Path, required=True, help="Directory containing peptide DFT reference results")
     parser.add_argument("--base-model-dir", type=Path, default=ROOT / "el-mlffs/checkpoints/peptide_dft_wb97x_5k_base_models")
     parser.add_argument("--base-checkpoint-template", default="{model}_torch.pth")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "reports/peptide_meta_nve_smoke")

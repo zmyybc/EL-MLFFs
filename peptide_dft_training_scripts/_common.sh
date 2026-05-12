@@ -4,8 +4,8 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
-DATA_FILE="${DATA_FILE:-/mnt/bn/bangchen1/HORM3/data/peptide_dft_wb97x_5k.lmdb}"
-REFS_JSON="${REFS_JSON:-/mnt/bn/bangchen1/HORM3/data/peptide_dft_wb97x_5k.refs.json}"
+DATA_FILE="${DATA_FILE:-el-mlffs/data/peptide/peptide_dft_wb97x_5k.lmdb}"
+REFS_JSON="${REFS_JSON:-el-mlffs/data/peptide/peptide_dft_wb97x_5k.refs.json}"
 DATASET_BACKEND="${DATASET_BACKEND:-peptide_dft_lmdb}"
 ENERGY_FIELD="${ENERGY_FIELD:-ae}"
 MAX_FORCE_NORM="${MAX_FORCE_NORM:-100.0}"

@@ -13,11 +13,11 @@ import torch
 
 
 DEFAULT_CHECKPOINT_DIR = Path(
-    "/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/el-mlffs/checkpoints/meta_models/conservative_combo"
+    "el-mlffs/checkpoints/meta_models/conservative_combo"
 )
-DEFAULT_OUTPUT_DIR = Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics")
-REFERENCE_CHECKPOINT = Path("/mnt/bn/bangchen/EL-MLFFs/el-mlffs/checkpoints/meta_models/conservative_meta_current_bases_8gpu.pth")
-DEFAULT_METRICS_CSV = Path("/mnt/bn/bangchen/EL-MLFFs/reports/conservative_combo_metrics/metrics.csv")
+DEFAULT_OUTPUT_DIR = Path("./reports/conservative_combo_metrics")
+REFERENCE_CHECKPOINT = Path("./el-mlffs/checkpoints/meta_models/conservative_meta_current_bases_8gpu.pth")
+DEFAULT_METRICS_CSV = Path("./reports/conservative_combo_metrics/metrics.csv")
 
 
 def parse_task_index(filename: str) -> int:

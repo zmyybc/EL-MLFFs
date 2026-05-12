@@ -35,9 +35,6 @@ ENV_SETUP_LOCK="${ENV_SETUP_LOCK:-${PROJECT_ROOT}/.horm_env_setup.lock}"
 
 BASE_MODELS=(dp nep mtp soap painn schnet mace)
 
-export http_proxy="${http_proxy:-http://sys-proxy-rd-relay.byted.org:8118}"
-export https_proxy="${https_proxy:-http://sys-proxy-rd-relay.byted.org:8118}"
-export no_proxy="${no_proxy:-byted.org}"
 
 PYTHON_VERSION="${PYTHON_VERSION:-3.11}"
 TORCH_VERSION="${TORCH_VERSION:-2.2.1}"

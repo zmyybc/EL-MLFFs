@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-export http_proxy="${http_proxy:-http://sys-proxy-rd-relay.byted.org:8118}"
-export https_proxy="${https_proxy:-http://sys-proxy-rd-relay.byted.org:8118}"
-export no_proxy="${no_proxy:-byted.org}"
 export PYTORCH_CUDA_ALLOC_CONF="${PYTORCH_CUDA_ALLOC_CONF:-expandable_segments:True}"
 
 ENV_NAME="${ENV_NAME:-horm}"

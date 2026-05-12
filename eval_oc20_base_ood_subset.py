@@ -18,7 +18,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--delivery-root",
         type=Path,
-        default=Path("/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle"),
+        default=Path("./"),
     )
     parser.add_argument(
         "--models",
@@ -39,12 +39,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/oc20_base_ood_metrics_100k.tsv"),
+        required=True, help="Path to OC20 base OOD metrics TSV",
     )
     parser.add_argument(
         "--save-force-dir",
         type=Path,
-        default=Path("/mnt/bn/changsu-data3/ybc/repos/EL-MLFFs_ybc_delivery_bundle/oc20_base_ood_force_cache"),
+        required=True, help="Path to OC20 base OOD force cache",
     )
     return parser.parse_args()
 
